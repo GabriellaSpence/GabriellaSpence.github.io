@@ -3,7 +3,7 @@
  
  Adapted from:
  
- FREE HTML5 TEMPLATE 
+ 	FREE HTML5 TEMPLATE 
 	DESIGNED & DEVELOPED by FreeHTML5.co
 		
 	Website: 		http://freehtml5.co/
