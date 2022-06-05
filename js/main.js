@@ -272,8 +272,41 @@ $(document).ready(function () {
 	// Learn More button scrolls to basic info
 	$(".btn-learn").click(function () {
 		$('html,body').animate({
-			scrollTop: $(".services-padding").offset().top},
+			scrollTop: $(".services-padding").offset().top
+		},
 			'slow');
 	});
 
-});
+	$('#myform').submit(function (event) {
+		console.log('sending');
+		// Add text 'loading...' right after clicking on the submit button. 
+		$('.output_message').text('Loading...');
+
+		$.ajax({
+			type: 'POST',
+			url: "mail.php",
+			data: $('#myform').serialize(),
+			success: function (result) {
+				if (result == 'success') {
+					$('.output_message').text('Message Sent!');
+				} else {
+					$('.output_message').text('Error Sending email!');
+				}
+			}
+		});
+	});
+
+	/* 	// Contact button
+		$(".btn-contact-send").click(function () {
+			var name = $.trim($("input[name='send-from']").val());
+			var email = $.trim($("input[name='send-email']").val());
+			var message = $.trim($("textarea").val());
+	
+			console.log(`Name: ${name}\n`);
+			console.log(`email: ${email}\n`);
+			console.log(`message: ${message}\n`);
+			
+		}); */
+
+
+	});

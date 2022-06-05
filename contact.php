@@ -108,37 +108,40 @@
 						<ul class="contact-info">
 							<li><i class="icon-location"></i>Issaquah, WA</li>
 							<li><i class="icon-mail22"></i><a href="mailto:gitblog.gabriella@gmail.com">Email</a></li>
-							<li><i class="icon-globe2"></i><a href="https://www.linkedin.com/in/gabriella-spence/">LinkedIn</a></li>
+							<li><i class="icon-linkedin"></i><a href="https://www.linkedin.com/in/gabriella-spence/">LinkedIn</a></li>
 						</ul>
 					</div>
 					<div class="col-md-7 col-md-push-1 animate-box">
+						<form id="myform">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Name">
+									<input type="text" class="form-control" name="send-from" placeholder="Name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email">
+									<input type="text" class="form-control" name="send-email" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									<textarea class="form-control" name="send-message" cols="30" rows="7" placeholder="Message"></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary">
+									<input type="submit" name="submit" value="Send Message" class="btn btn-primary btn-contact-send">
 								</div>
 							</div>
+							<span class="output_message">placeholder</span>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
 	</div>
-	
+
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
