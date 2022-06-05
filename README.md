@@ -11,3 +11,8 @@
 	Twitter: 		http://twitter.com/fh5co
 	Facebook: 		https://www.facebook.com/fh5co
 
+
+
+Under Construction: 
+* Link contact form to email.
+* Make textbox on sliding panel mobile friendly. 
