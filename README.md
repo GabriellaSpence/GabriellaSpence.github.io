@@ -15,6 +15,5 @@
 
 
 Under Construction: 
-* Link contact form to email.
 * Build out first blog post.
 * Make textbox on sliding panel mobile friendly. 
