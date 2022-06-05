@@ -1,5 +1,5 @@
 # GabriellaSpence.github.io
- Personal Website in Progress
+ Personal Website Work in Progress
  
  Adapted from:
  
