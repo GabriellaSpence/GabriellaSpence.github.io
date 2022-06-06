@@ -589,11 +589,20 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 10px;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .slider-text-bg .desc {
+    margin-right: 0em;
+    margin-left: 0em
+  }
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text-bg .desc p {
     display: none;
   }
 }
+
 #fh5co-hero .flexslider .slider-text,
 #fh5co-hero .flexslider .slider-text-bg {
   display: table;
