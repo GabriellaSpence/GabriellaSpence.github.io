@@ -251,6 +251,20 @@
 	};
 
 
+	var disableClick = function () {
+		$("a").click(function (event) {
+			var link = $(this).attr('href');
+			if (isMobile.any()) {
+				if (link == 'blog.html') {
+					event.originalEvent.currentTarget.href = 'javascript:void(0)';
+				} else if (link == 'javascript:void(0)'){  
+					event.originalEvent.currentTarget.href = 'blog.html';
+				}
+			}
+		});
+	};
+
+
 	$(function () {
 		mobileMenuOutsideClick();
 		offcanvasMenu();
@@ -262,6 +276,7 @@
 		loaderPage();
 		counterWayPoint();
 		fullHeight();
+		disableClick();
 	});
 
 
@@ -272,8 +287,10 @@ $(document).ready(function () {
 	// Learn More button scrolls to basic info
 	$(".btn-learn").click(function () {
 		$('html,body').animate({
-			scrollTop: $(".services-padding").offset().top},
+			scrollTop: $(".services-padding").offset().top
+		},
 			'slow');
 	});
+
 
 });
