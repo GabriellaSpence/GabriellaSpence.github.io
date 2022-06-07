@@ -576,9 +576,11 @@ h1, h2, h3, h4, h5, h6, figure {
   display: none;
 }
 #fh5co-hero .flexslider .slider-text-bg .desc {
-  margin-top: 9em;
-  margin-right: 12em;
-  margin-left: -12em;
+  margin-top: 3em;
+  position:absolute;
+  left:50px;
+  transform:translateX(-50%);
+
   padding: 2em;
   background: #a8d0e6;
   -webkit-box-shadow: 0px 21px 24px 0px rgba(0, 0, 0, 0.13);
@@ -592,8 +594,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text-bg .desc {
-    margin-right: 0em;
-    margin-left: 0em
+    display: none;
   }
 }
 
@@ -633,6 +634,12 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-blog-header {
+  padding-top: 7em;
+  clear: both;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-slider,
   #fh5co-about,
@@ -1144,33 +1151,7 @@ input[type="text"] {
   display: block;
   position: relative;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
-  position: absolute;
-  right: 0px;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\ebfc";
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-#fh5co-offcanvas ul li.offcanvas-has-dropdown.active a:after {
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-}
+
 
 .uppercase {
   font-size: 14px;

@@ -57,22 +57,6 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
-		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function () {
-			var $this = $(this);
-
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');
-		}).mouseleave(function () {
-
-			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');
-		});
 
 
 		$(window).resize(function () {
@@ -251,6 +235,7 @@
 	};
 
 
+
 	$(function () {
 		mobileMenuOutsideClick();
 		offcanvasMenu();
@@ -272,8 +257,10 @@ $(document).ready(function () {
 	// Learn More button scrolls to basic info
 	$(".btn-learn").click(function () {
 		$('html,body').animate({
-			scrollTop: $(".services-padding").offset().top},
+			scrollTop: $(".services-padding").offset().top
+		},
 			'slow');
 	});
+
 
 });
