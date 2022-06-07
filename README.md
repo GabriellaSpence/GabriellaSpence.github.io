@@ -17,4 +17,3 @@
 Under Construction: 
 * Build out first blog post.
 * Make textbox on sliding panel mobile friendly. 
-* Fix contact for name field.
