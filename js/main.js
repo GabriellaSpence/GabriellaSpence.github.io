@@ -57,22 +57,6 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
-		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function () {
-			var $this = $(this);
-
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');
-		}).mouseleave(function () {
-
-			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');
-		});
 
 
 		$(window).resize(function () {
@@ -251,19 +235,6 @@
 	};
 
 
-	var disableClick = function () {
-		$("a").click(function (event) {
-			var link = $(this).attr('href');
-			if (isMobile.any()) {
-				if (link == 'blog.html') {
-					event.originalEvent.currentTarget.href = 'javascript:void(0)';
-				} else if (link == 'javascript:void(0)'){  
-					event.originalEvent.currentTarget.href = 'blog.html';
-				}
-			}
-		});
-	};
-
 
 	$(function () {
 		mobileMenuOutsideClick();
@@ -276,7 +247,6 @@
 		loaderPage();
 		counterWayPoint();
 		fullHeight();
-		disableClick();
 	});
 
 
