@@ -112,24 +112,27 @@
 						</ul>
 					</div>
 					
-					<form action="https://formspree.io/f/mjvlzvgy" method="POST">
+				
+					<form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/mjvlzvgy" method="POST">
 						<div class="col-md-7 col-md-push-1 animate-box">
 							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label> Name <input type="text" class="form-control" placeholder="Name"> </label>
+								<fieldset id="fs-frm-inputs">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label> Name <input type="text" class="form-control" name="name" placeholder="Name"> </label>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label> Email <input type="email" class="form-control" name="email"> </label>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label> Email <input type="email" class="form-control" name="_replyto" placeholder="Email"> </label>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea name="Message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+										</div>
 									</div>
-								</div>
+								</fieldset>
 								<div class="col-md-12">
 									<div class="form-group">
 										<input type="submit" value="Send Message" class="btn btn-primary">
@@ -137,7 +140,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 	</div>
@@ -185,11 +188,12 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">Adapted from <a href="https://freehtml5.co/">Free HTML5. </a> <br> Last modified <span id="demo"></span>.
+						<small class="block">&copy; Gabriella Spence</small> 
+						<small class="block">Adapted from <a href="https://freehtml5.co/">Free HTML5. </a> <br> Last Modified <span id="demo"></span>.
 							<script>
 							document.getElementById("demo").innerHTML = document.lastModified;
 							</script>
-						</small>
+						</small> 
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
