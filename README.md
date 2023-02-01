@@ -15,4 +15,4 @@
 
 
 Under Construction:
-* Build out next Github project
+* Build out next GitHub project
