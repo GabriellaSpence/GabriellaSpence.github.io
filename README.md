@@ -14,5 +14,5 @@
 
 
 
-Under Construction: 
-* Build out first blog post.
+Under Construction:
+* Build out next GitHub project
